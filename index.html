@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="Ac3kvOH5Q8Ll154Vmp-qw-oG1okebQLlyYuAiqwtGdA" />
+  <link rel="canonical" href="https://janindu98.github.io/moneymate-website/">
   <title>MoneyMate Vault - Personal Finance & Salary Management</title>
   <meta name="description"
     content="MoneyMate Vault is a desktop application for managing personal finances, tracking income and expenses, organizing salary information, and securely backing up your financial data.">
+  <meta property="og:title" content="MoneyMate Vault - Personal Finance & Salary Management">
+  <meta property="og:description" content="MoneyMate Vault is a desktop application for managing personal finances, tracking income and expenses, organizing salary information, and securely backing up your financial data.">
+  <meta property="og:url" content="https://janindu98.github.io/moneymate-website/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MoneyMate Vault">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -300,6 +306,46 @@
           </div>
         </div>
       </div>
+
+      <!-- Google OAuth 2.0 Transparency & Limited Use Box -->
+      <div class="oauth-disclosure-box">
+        <div class="oauth-disclosure-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#6366f1" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <strong style="color: #fff; font-size: 0.98rem;">Google OAuth 2.0 & Data Access Transparency</strong>
+          </div>
+          <span class="scope-badge">Scope: https://www.googleapis.com/auth/drive.file</span>
+        </div>
+
+        <p style="font-size: 0.92rem; color: #cbd5e1; margin-bottom: 0.75rem;">
+          To ensure complete transparency regarding Google Account data access during Google OAuth verification:
+        </p>
+
+        <div class="oauth-details-grid">
+          <div class="oauth-detail-item">
+            <strong>1. Purpose of Data Access</strong>
+            <p>Access is requested strictly to save, update, and restore your client-side encrypted backup packages (<code>.enc</code>) to your own Google Drive storage.</p>
+          </div>
+          <div class="oauth-detail-item">
+            <strong>2. Limited Per-File Scope</strong>
+            <p>MoneyMate Vault only accesses files created by the application itself. It <u>cannot</u> view, read, edit, or delete any other personal documents, spreadsheets, or photos in your Google Drive.</p>
+          </div>
+          <div class="oauth-detail-item">
+            <strong>3. Client-Side Encryption</strong>
+            <p>Financial ledger records are encrypted with AES-256 on your local device before upload. Neither Google nor MoneyMate developers can read your plain financial data.</p>
+          </div>
+          <div class="oauth-detail-item">
+            <strong>4. Local Token Storage & Revocation</strong>
+            <p>OAuth tokens remain on your local computer. You can revoke access at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account Permissions</a> or in-app settings.</p>
+          </div>
+        </div>
+
+        <div class="limited-use-notice">
+          <strong>Google API Limited Use Disclosure:</strong> MoneyMate Vault's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is never used for advertising, AI model training, or sold to third-party brokers.
+        </div>
+      </div>
     </div>
   </section>
 
@@ -497,7 +543,7 @@
             <img src="assets/logo.png" alt="MoneyMate Vault Logo" width="34" height="34">
             <div class="brand-text">
               <span class="brand-title">MoneyMate Vault</span>
-              <span class="brand-subtitle">Desktop Application</span>
+              <!-- <span class="brand-subtitle">Desktop Application</span> -->
             </div>
           </div>
           <p>

@@ -4,9 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Ac3kvOH5Q8Ll154Vmp-qw-oG1okebQLlyYuAiqwtGdA" />
+  <link rel="canonical" href="https://janindu98.github.io/moneymate-website/privacy.html">
   <title>Privacy Policy - MoneyMate Vault</title>
   <meta name="description"
-    content="Official Microsoft Store Privacy Policy for MoneyMate Vault. Learn how MoneyMate Vault handles your financial data, local encrypted storage, and your privacy rights.">
+    content="Official Privacy Policy for MoneyMate Vault. Learn how MoneyMate Vault handles your financial data, local encrypted storage, Google Drive backup, and your privacy rights.">
+  <meta property="og:title" content="Privacy Policy - MoneyMate Vault">
+  <meta property="og:description"
+    content="Official Privacy Policy for MoneyMate Vault. Learn how MoneyMate Vault handles your financial data, local encrypted storage, Google Drive backup, and your privacy rights.">
+  <meta property="og:url" content="https://janindu98.github.io/moneymate-website/privacy.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MoneyMate Vault">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +33,7 @@
           <img src="assets/logo.png" alt="MoneyMate Vault Logo" width="38" height="38">
           <div class="brand-text">
             <span class="brand-title">MoneyMate Vault</span>
+            <!-- <span class="brand-subtitle">Desktop Application</span> -->
           </div>
         </a>
 
@@ -63,6 +72,7 @@
           <li class="sidebar-nav-item"><a href="#storage-architecture">4. Where Data is Stored</a></li>
           <li class="sidebar-nav-item"><a href="#data-transmission">5. Data Transmission</a></li>
           <li class="sidebar-nav-item"><a href="#third-parties">6. Third-Party Services</a></li>
+          <li class="sidebar-nav-item"><a href="#google-api-policy">6.1 Google API & Limited Use</a></li>
           <li class="sidebar-nav-item"><a href="#microsoft-store">7. Microsoft Store & Pro</a></li>
           <li class="sidebar-nav-item"><a href="#security-measures">8. Security & Encryption</a></li>
           <li class="sidebar-nav-item"><a href="#user-control">9. Your Rights & Control</a></li>
@@ -99,10 +109,11 @@
             on Windows.
           </p>
           <div class="policy-meta-tags">
-            <span class="meta-badge">Effective Date: August 15, 2026</span>
+            <span class="meta-badge">Effective Date: August 18, 2026</span>
             <span class="meta-badge">Application Version: 1.5.0</span>
             <span class="meta-badge badge-store">Microsoft Store Certified</span>
             <span class="meta-badge">Platform: Windows 10 & 11 (x64)</span>
+            <span class="meta-badge">Official URL: https://janindu98.github.io/moneymate-website/privacy.html</span>
           </div>
         </header>
 
@@ -362,6 +373,61 @@
           </div>
         </section>
 
+        <!-- Section 6.1: Google API Services User Data Policy & Limited Use -->
+        <section id="google-api-policy" class="policy-section">
+          <h2>6.1 Google API Services User Data Policy & Limited Use Disclosure</h2>
+          <p>
+            MoneyMate Vault provides an optional integration with <strong>Google Drive</strong> to allow users to
+            securely store, synchronize, and restore encrypted financial backup archives (<code>.enc</code>).
+          </p>
+
+          <div class="notice-card notice-success">
+            <div class="notice-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#10b981" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Limited Use Compliance Statement:</strong><br>
+              MoneyMate Vault's use and transfer to any other app of information received from Google APIs will adhere
+              to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank"
+                rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use
+              requirements.
+            </div>
+          </div>
+
+          <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #fff;">Detailed Google User Data Practices:</h3>
+          <ul style="padding-left: 1.5rem; margin-bottom: 1.25rem;">
+            <li><strong>OAuth Scope Requested:</strong> <code>https://www.googleapis.com/auth/drive.file</code>
+              (Per-file access restricted solely to files created, opened, or managed directly by MoneyMate Vault).</li>
+            <li><strong>Explicit Purpose of Access:</strong> We request access to your Google Drive strictly to upload,
+              download, and synchronize your client-side encrypted financial backup archives (<code>.enc</code>) upon
+              your explicit request.</li>
+            <li><strong>Zero Access to Other Drive Files:</strong> MoneyMate Vault does not, and cannot, read, access,
+              view, modify, or delete any other personal documents, spreadsheets, photos, or files in your Google Drive.
+            </li>
+            <li><strong>Client-Side AES Encryption:</strong> All financial entries are encrypted locally on your
+              computer with AES-256 before any data is transmitted to Google Drive. Neither Google nor MoneyMate Vault
+              developers have access to your encryption key or plain financial data.</li>
+            <li><strong>Local Token Storage:</strong> OAuth 2.0 authentication tokens are stored exclusively in your
+              local Windows credential vault on your PC. Tokens are never transmitted to any MoneyMate server or
+              external third-party infrastructure.</li>
+            <li><strong>No Secondary Data Usage or Transfers:</strong>
+              <ul style="padding-left: 1.25rem; margin-top: 0.25rem;">
+                <li>We do not transfer or disclose Google user data to data brokers or third parties.</li>
+                <li>We do not use Google user data for serving advertisements, retargeting, or promotional profiling.
+                </li>
+                <li>We do not use Google user data to train machine learning or artificial intelligence models.</li>
+                <li>No humans at MoneyMate Vault read or access your Google Drive content.</li>
+              </ul>
+            </li>
+            <li><strong>Revocation & Data Deletion:</strong> You can disconnect your Google Drive integration at any
+              time within MoneyMate Vault settings, or instantly revoke access via your <a
+                href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account
+                Security Permissions</a>. You can delete your backup files directly from Google Drive at any time.</li>
+          </ul>
+        </section>
+
         <!-- Section 7: Microsoft Store & Pro -->
         <section id="microsoft-store" class="policy-section">
           <h2>7. Microsoft Store Purchasing & Pro Subscription Relationship</h2>
@@ -471,7 +537,8 @@
               at any moment directly from their respective tabs.</li>
             <li><strong>Data Export & Portability:</strong> Export your full financial records to structured
               <strong>Excel (.xlsx)</strong>, printable <strong>PDF Reports</strong>, standard <strong>JSON</strong>, or
-              encrypted <strong>.enc</strong> archives whenever you wish.</li>
+              encrypted <strong>.enc</strong> archives whenever you wish.
+            </li>
             <li><strong>Restore Backups:</strong> Seamlessly import previous backups to restore or migrate your data to
               another Windows PC.</li>
             <li><strong>Permanent Data Erasure (Reset All Data):</strong> Navigate to <em>Settings → Reset Database</em>
@@ -479,7 +546,8 @@
               one confirmation.</li>
             <li><strong>Uninstallation:</strong> Uninstalling MoneyMate Vault via Windows Settings and deleting the
               <code>%APPDATA%\MoneyMate</code> and <code>Documents\MoneyMate</code> directories permanently purges all
-              local traces.</li>
+              local traces.
+            </li>
           </ul>
         </section>
 
@@ -570,7 +638,7 @@
             <img src="assets/logo.png" alt="MoneyMate Vault Logo" width="34" height="34">
             <div class="brand-text">
               <span class="brand-title">MoneyMate Vault</span>
-              <span class="brand-subtitle">Desktop Application</span>
+              <!-- <span class="brand-subtitle">Desktop Application</span> -->
             </div>
           </div>
           <p>
