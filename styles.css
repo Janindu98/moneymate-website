@@ -232,7 +232,7 @@ code {
 }
 
 /* Section scroll offsets under fixed navbar */
-#overview, #features, #privacy-spotlight, #download, .policy-section {
+#overview, #features, #cloud-backup, #privacy-spotlight, #download, .policy-section {
   scroll-margin-top: calc(var(--nav-height) + 1.5rem);
 }
 
@@ -336,6 +336,14 @@ code {
   margin-right: auto;
 }
 
+.hero-subtitle {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
 .text-gradient-emerald {
   background: var(--success-gradient);
   -webkit-background-clip: text;
@@ -344,9 +352,10 @@ code {
 
 .hero-lead {
   font-size: 1.15rem;
-  max-width: 720px;
-  margin: 0 auto 2.25rem;
+  max-width: 760px;
+  margin: 0 auto 2rem;
   color: var(--text-secondary);
+  line-height: 1.7;
 }
 
 .hero-cta-group {
@@ -356,6 +365,82 @@ code {
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2.5rem;
+}
+
+/* Hero Verified Features Checklist Card */
+.hero-checklist-container {
+  max-width: 860px;
+  margin: 0 auto 2.5rem;
+  background: rgba(15, 19, 34, 0.7);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: left;
+}
+
+.hero-checklist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-checklist-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.85rem 1.25rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.checklist-item:hover {
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.checklist-check-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10b981;
+  font-size: 0.8rem;
+  font-weight: 800;
+  flex-shrink: 0;
 }
 
 .hero-trust-badges {
@@ -376,6 +461,60 @@ code {
 
 .trust-item svg {
   color: var(--accent-emerald);
+}
+
+/* Cloud Backup Feature Showcase */
+.cloud-backup-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(16, 185, 129, 0.06) 100%), var(--bg-card);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: var(--radius-xl);
+  padding: 2.75rem 2.5rem;
+  box-shadow: var(--shadow-md);
+  margin: 3rem 0;
+}
+
+.cloud-backup-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .cloud-backup-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cloud-flow-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cloud-step-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cloud-step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
 }
 
 /* Feature Cards Grid matching software panel styles */

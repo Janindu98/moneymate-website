@@ -25,6 +25,7 @@
         <ul class="nav-links">
           <li><a href="index.html#overview" class="nav-link">Overview</a></li>
           <li><a href="index.html#features" class="nav-link">Features</a></li>
+          <li><a href="index.html#cloud-backup" class="nav-link">Cloud Backup</a></li>
           <li><a href="index.html#privacy-spotlight" class="nav-link">Privacy Model</a></li>
           <li><a href="privacy.html" class="nav-link active">Privacy Policy</a></li>
           <li><a href="support.html" class="nav-link">Support & Help</a></li>
@@ -255,7 +256,7 @@
           <p>The only network communications that may occur on your PC are:</p>
           <ol>
             <li><strong>Microsoft Store API Calls:</strong> The desktop app invokes native Windows Runtime Store APIs (<code>Windows.Services.Store</code>) to verify whether your Windows Microsoft Account owns a MoneyMate Pro license or active subscription.</li>
-            <li><strong>User-Initiated Local Cloud Sync Folders:</strong> If you explicitly choose to backup your data to a folder synced by your Google Drive, Microsoft OneDrive, or Dropbox desktop client, MoneyMate Vault copies the local file to your designated local sync directory. The respective cloud synchronization is handled exclusively by your official cloud client application under your own account credentials.</li>
+            <li><strong>User-Initiated Google Drive & Cloud Backups:</strong> If you explicitly choose to backup your data to Google Drive or a local cloud-synced folder, MoneyMate Vault creates encrypted backups of your financial data and stores those encrypted backup files (<code>.enc</code>) in your Google Drive or designated sync directory. Financial data is encrypted locally on your device before it is uploaded.</li>
           </ol>
         </section>
 
@@ -263,7 +264,7 @@
         <section id="third-parties" class="policy-section">
           <h2>6. Third-Party Services & Integrations</h2>
           <p>
-            To provide complete transparency as required by Microsoft Store policy, the table below outlines all third-party services, APIs, and dependencies:
+            To provide complete transparency as required by Microsoft Store and Google API policies, the table below outlines all third-party services, APIs, and dependencies:
           </p>
 
           <div class="table-responsive">
@@ -284,10 +285,10 @@
                   <td><a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a></td>
                 </tr>
                 <tr>
-                  <td><strong>Cloud Storage Clients (Google Drive, OneDrive, Dropbox)</strong></td>
-                  <td>Optional user-directed local file backup mirroring.</td>
-                  <td>Encrypted backup file (<code>.enc</code>) or payslip files only if explicitly configured in settings by the user.</td>
-                  <td>User's respective Cloud Provider Privacy Policy</td>
+                  <td><strong>Google Drive (Google LLC)</strong></td>
+                  <td>Optional user-initiated encrypted backup file storage.</td>
+                  <td>Encrypted backup files (<code>.enc</code>). All financial data is encrypted locally before upload. No plain financial data is shared.</td>
+                  <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
                 </tr>
                 <tr>
                   <td><strong>Analytics & Crash Telemetry</strong></td>
