@@ -167,30 +167,42 @@ code {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.5px;
   text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.brand:hover {
+  opacity: 0.92;
 }
 
 .brand img {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.brand-badge {
-  font-size: 0.7rem;
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-title {
+  font-size: 1.15rem;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: var(--radius-full);
-  background: rgba(99, 102, 241, 0.15);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.brand-subtitle {
+  font-size: 0.7rem;
+  font-weight: 600;
   color: var(--primary-light);
-  border: 1px solid rgba(99, 102, 241, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-top: 1px;
 }
 
 .nav-links {
